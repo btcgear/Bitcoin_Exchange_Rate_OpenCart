@@ -1,6 +1,6 @@
-Bitcoin Exchange Rate v1.0
-OpenCart Extension
-by John Atkinson (jga) from BTC Gear (http://www.btcgear.com)
+# Bitcoin Exchange Rate v1.1
+## OpenCart Extension
+### by John Atkinson (jga) from BTC Gear (http://www.btcgear.com)
 
 bounties/donations 14dTC7bBphANAHzmK9aD7X7Wvo99rhHMTF
 
@@ -28,7 +28,7 @@ Compatible with OpenCart versions:
 
 If you have any issues or comments about this software, please contact support@btcgear.com
 
-Copyright (c) 2012 John Atkinson (jga)
+Copyright (c) 2013 John Atkinson (jga)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
