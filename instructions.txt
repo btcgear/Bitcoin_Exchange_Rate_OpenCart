@@ -1,8 +1,9 @@
-Bitcoin Exchange Rate v1.1
+Bitcoin Exchange Rate v1.2
 OpenCart Extension
 by John Atkinson (jga) from BTC Gear (http://www.btcgear.com)
 
 This product is offered with no warranty and is currently supported only for Opencart versions listed below
+
 * 1.5.0
 * 1.5.0.2
 * 1.5.0.3

@@ -1,4 +1,4 @@
-# Bitcoin Exchange Rate v1.1
+# Bitcoin Exchange Rate v1.2
 ## OpenCart Extension
 ### by John Atkinson (jga) from BTC Gear (http://www.btcgear.com)
 
@@ -6,9 +6,10 @@ bounties/donations 14dTC7bBphANAHzmK9aD7X7Wvo99rhHMTF
 
 This OpenCart extension initializes the Bitcoin (BTC) currency inside OpenCart and updates the exchange rate every minute to remain current. It pulls both the 24-hour average trade value or the last trade value from Mt. Gox and uses whichever one is friendlier for the merchant thus lessening the currency risk. 
 
-This extension currently only works properly when the default currency is USD.
+This extension now works with all currencies supported by the Mt. Gox API: USD, AUD, CAD, CHF, CNY, DKK, EUR, GBP, HKD, JPY, NZD, PLN, RUB, SEK, SGD, THB
 
-Compatible with OpenCart versions:
+###Compatible with OpenCart versions:
+
 * 1.5.0
 * 1.5.0.2
 * 1.5.0.3

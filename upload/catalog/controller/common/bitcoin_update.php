@@ -54,8 +54,8 @@ class ControllerCommonBitcoinUpdate extends Controller {
 	}
 		
 	public function runUpdate() {
-	//	print "update running\n";
-		$path = "1/BTCUSD/ticker";
+		$default_currency_code = $this->config->get('config_currency');
+		$path = "1/BTC". $default_currency_code . "/ticker";
 		$req = array();
 		
 		// API settings
@@ -94,7 +94,7 @@ class ControllerCommonBitcoinUpdate extends Controller {
 		$currency = "BTC";
 		$avg_value = $btcdata['return']['avg']['value'];
 		$last_value = $btcdata['return']['last']['value'];
-		
+				
 		if ((float)$avg_value && (float)$last_value) {
 			if($avg_value < $last_value) {
 				$value = $avg_value;
