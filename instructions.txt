@@ -3,20 +3,20 @@ OpenCart Extension
 by John Atkinson (jga) from BTC Gear (http://www.btcgear.com)
 
 This product is offered with no warranty and is currently supported only for Opencart versions listed below
-1.5.0
-1.5.0.2
-1.5.0.3
-1.5.0.4
-1.5.0.5
-1.5.1
-1.5.1.1
-1.5.1.2
-1.5.1.3
-1.5.2
-1.5.2.1
-1.5.3.1
-1.5.4
-1.5.4.1
+* 1.5.0
+* 1.5.0.2
+* 1.5.0.3
+* 1.5.0.4
+* 1.5.0.5
+* 1.5.1
+* 1.5.1.1
+* 1.5.1.2
+* 1.5.1.3
+* 1.5.2
+* 1.5.2.1
+* 1.5.3.1
+* 1.5.4
+* 1.5.4.1
 
 ===INSTALLATION===
 Installation is a two step process.  You must upload bitcoin_update.php and you must modify index.php.
