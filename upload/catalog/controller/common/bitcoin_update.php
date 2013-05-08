@@ -92,9 +92,16 @@ class ControllerCommonBitcoinUpdate extends Controller {
 		$btcdata = $dec;
 		
 		$currency = "BTC";
-		$value = $btcdata['return']['avg']['value'];
+		$avg_value = $btcdata['return']['avg']['value'];
+		$last_value = $btcdata['return']['last']['value'];
 		
-		if ((float)$value) {
+		if ((float)$avg_value && (float)$last_value) {
+			if($avg_value < $last_value) {
+				$value = $avg_value;
+			}
+			else {
+				$value = $last_value;
+			}
 			$value = 1/$value;
 			$this->db->query("UPDATE " . DB_PREFIX . "currency SET value = '" . (float)$value . "', date_modified = '" .  $this->db->escape(date('Y-m-d H:i:s')) . "' WHERE code = '" . $this->db->escape($currency) . "'");
 		}

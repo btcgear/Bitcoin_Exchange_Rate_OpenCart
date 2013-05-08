@@ -4,9 +4,7 @@
 
 bounties/donations 14dTC7bBphANAHzmK9aD7X7Wvo99rhHMTF
 
-This OpenCart extension initializes the Bitcoin (BTC) currency inside OpenCart and
-updates the exchange rate every minute to remain current via MtGox's 24 hour average
-BTC-USD exchange rate.
+This OpenCart extension initializes the Bitcoin (BTC) currency inside OpenCart and updates the exchange rate every minute to remain current. It pulls both the 24-hour average trade value or the last trade value from Mt. Gox and uses whichever one is friendlier for the merchant thus lessening the currency risk. 
 
 This extension currently only works properly when the default currency is USD.
 
