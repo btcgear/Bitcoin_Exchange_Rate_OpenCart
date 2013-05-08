@@ -24,6 +24,8 @@ This extension now works with all currencies supported by the Mt. Gox API: USD, 
 * 1.5.3.1
 * 1.5.4
 * 1.5.4.1
+* 1.5.5
+* 1.5.5.1
 
 If you have any issues or comments about this software, please contact support@btcgear.com
 
