@@ -52,7 +52,7 @@ class ControllerCommonBitcoinUpdate extends Controller {
 				}
 			}
 			catch (Exception $e) {
-				echo "Error retrieving exchange rate";
+				//
 			}
 		}
 	}
