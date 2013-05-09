@@ -37,18 +37,22 @@ class ControllerCommonBitcoinUpdate extends Controller {
 			$current_time = strptime($current_string,$format);
 		
 			$num_seconds = 60; //every [this many] seconds, the update should run.
-			
-			if($last_time['tm_year'] != $current_time['tm_year']) {
-				$this->runUpdate();
+			try{
+				if($last_time['tm_year'] != $current_time['tm_year']) {
+					$this->runUpdate();
+				}
+				else if($last_time['tm_yday'] != $current_time['tm_yday']) {
+					$this->runUpdate();
+				}
+				else if($last_time['tm_hour'] != $current_time['tm_hour']) {
+					$this->runUpdate();
+				}
+				else if(($last_time['tm_min']*60)+$last_time['tm_sec'] + $num_seconds < ($current_time['tm_min'] * 60) + $current_time['tm_sec']) {
+					$this->runUpdate();
+				}
 			}
-			else if($last_time['tm_yday'] != $current_time['tm_yday']) {
-				$this->runUpdate();
-			}
-			else if($last_time['tm_hour'] != $current_time['tm_hour']) {
-				$this->runUpdate();
-			}
-			else if(($last_time['tm_min']*60)+$last_time['tm_sec'] + $num_seconds < ($current_time['tm_min'] * 60) + $current_time['tm_sec']) {
-				$this->runUpdate();
+			catch (Exception $e) {
+				echo "Error retrieving exchange rate";
 			}
 		}
 	}
@@ -90,7 +94,7 @@ class ControllerCommonBitcoinUpdate extends Controller {
 		$dec = json_decode($res, true);
 		if (!$dec) throw new Exception('Invalid data received, please make sure connection is working and requested API exists');
 		$btcdata = $dec;
-		
+				
 		$currency = "BTC";
 		$avg_value = $btcdata['return']['avg']['value'];
 		$last_value = $btcdata['return']['last']['value'];
